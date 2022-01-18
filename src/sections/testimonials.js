@@ -70,7 +70,7 @@ const data = [
       avatar: avatar,
       name: "Harshita Joshi",
       username: "@harshitajoshi",
-      text: ``,
+      text: `Works just fine! It good to have a second IDE in my main workflow cuz it makes it easier to work on multiple projects simultaneously.`,
     },
     {
       id: 8,
