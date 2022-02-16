@@ -11,7 +11,7 @@ const CallToAction = () => {
         <Flex sx={styles.flex}>
           <Box sx={styles.content}>
             <Text as="span">Behind the Scenes</Text>
-            <Heading as="h3">Code that we used to build the website</Heading>
+            <Heading as="h3">Code that we used to build the product</Heading>
             <Text as="p">
               We use a variety of technologies to build the website. Whether its
               NextJs or Wordpress, we use the technology that does the work best

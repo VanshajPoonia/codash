@@ -23,7 +23,9 @@ const accordionData = [
       <div>
         If you don't get your credentials within 30 minutes, please wait for 2
         more hours as sometimes there is maintenance work going on. If you still
-        don't get them, you can contact the support by <a href="https://forms.gle/eqmi7GKfLaWNdrqW9" target="_blank">clicking here
+        don't get them, you can contact the support by{" "}
+        <a href="https://forms.gle/eqmi7GKfLaWNdrqW9" target="_blank">
+          clicking here
         </a>
       </div>
     ),
@@ -33,9 +35,10 @@ const accordionData = [
     title: "Can I run my code in Kelvin?",
     contents: (
       <div>
-        We are really sorry but you can't compile and run you code in Kelvin. Kelvin is only
-        a text-editor. But, you can write your whole code there with auto-complete suggestions and
-        syntax highlighting and then download those code files.
+        We are really sorry but you can't compile and run you code in Kelvin.
+        Kelvin is only a text-editor. But, you can write your whole code there
+        with auto-complete suggestions and syntax highlighting and then download
+        those code files.
       </div>
     ),
   },
@@ -44,11 +47,11 @@ const accordionData = [
     title: "Can I get the desired server to host my application?",
     contents: (
       <div>
-        Yes, that's possible but in some cases you might have to pay some extra amount.
-        Not a huge amount of money but it might cost you some 1-2 dollars more generally.
-        The hosting that we provide is included in your plan itself so for our hosting, you don't
-        have to pay the money seperately; except for Inferno plan as there everything is customized.
-      
+        Yes, that's possible but in some cases you might have to pay some extra
+        amount. Not a huge amount of money but it might cost you some 1-2
+        dollars more generally. The hosting that we provide is included in your
+        plan itself so for our hosting, you don't have to pay the money
+        seperately; except for Inferno plan as there everything is customized.
       </div>
     ),
   },
@@ -57,9 +60,9 @@ const accordionData = [
     title: "What is Inferno plan?",
     contents: (
       <div>
-        Inferno is the plan designed for Professionals and Enterprise. It is a customized plan where
-        the client chooses the configuration of the server and the IDE. There one can even customize the
-        url of the application.
+        Inferno is the plan designed for Professionals and Enterprise. It is a
+        customized plan where the client chooses the configuration of the server
+        and the IDE. There one can even customize the url of the application.
       </div>
     ),
   },
@@ -70,8 +73,8 @@ const FAQ = () => {
     <Box as="section" id="faqs">
       <Container>
         <BlockTitle
-          // title="Frequently Ask Question"
-          text="Frequently Asked Questions"
+          title="Frequently Asked Questions"
+          text="You might find your answers here"
         />
         <Flex sx={styles.flex}>
           <Box sx={styles.faqWrapper}>
@@ -105,7 +108,7 @@ const styles = {
   flex: {
     flexWrap: "wrap",
     flexDirection: ["column", null, null, null, null, "row-reverse"],
-    pb: ["70px", null, null, null, "90px", null, "130px"],
+    pb: ["70px", null, null, null, "90px", null, "20px"],
   },
 
   content: {
@@ -114,7 +117,7 @@ const styles = {
     mx: ["auto", null, null, null, "0"],
     mb: ["0px", null, null, null, "0"],
     textAlign: ["center", null, null, null, null, "left"],
-    mt: ["40px", null, null, null, null, "0"],
+    mt: ["60px", null, null, null, null, "0"],
     h3: {
       fontSize: ["23px", null, null, null, "24px"],
       lineHeight: [1.5, null, null, null, 1.67],

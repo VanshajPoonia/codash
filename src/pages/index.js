@@ -12,6 +12,7 @@ import CallToAction from "sections/call-to-action";
 import Featured from "sections/featured";
 import Pricing from "sections/pricing";
 import Testimonials from "sections/testimonials";
+import FeaturedSpace from "sections/featured-space";
 // import Blogs from 'sections/blogs';
 import FAQ from "sections/faq";
 import Support from "sections/support";
@@ -32,6 +33,7 @@ export default function IndexPage() {
           <Jackpot />
           <WorkFlow />
           <CallToAction />
+          <FeaturedSpace />
           <Featured />
           <Pricing />
           <Testimonials />

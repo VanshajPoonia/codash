@@ -345,7 +345,7 @@ const Pricing = () => {
     <Box as="section" id="pricing" sx={styles.pricing}>
       <Container>
         <BlockTitle
-          title="What deal suit you perfect"
+          title="Choose the deal that suits you best"
           text="Meet our pricing plan"
         />
         <Box sx={styles.btnWrap}>
