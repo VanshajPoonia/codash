@@ -60,7 +60,7 @@ const TESTIMONIALS_DATA = [
       image: avatar,
       name: "Nitish Kumar",
       username: "@nitish.kumar",
-      text: `Codash is a great tool for me as it helps me to write the code on any device that I have given that it is touch screen. I personally liek the setup process that you don't have to do much stuff while it up. Just go rent a server and start programming.`,
+      text: `Codash is a great tool for me as it helps me to write the code on any device that I have given that it is touch screen. I personally like the setup process that you don't have to do much stuff while it up. Just go rent a server and start programming.`,
     },
   ],
   [
@@ -101,7 +101,7 @@ const TESTIMONIALS_DATA = [
   //     avatar: avatar3,
   //     name: "Vinay Arora",
   //     username: "@vinay.me",
-  //     text: `Its been 3 days that I have been using Kelvin in its beta testing. I really loved it as it was very easy to use. Also, you don't have to worry about saving the stuff, even if you quit the code editor, it caches that into your storage automatically.`,
+  //     text: `Its been 3 days that I have been using Kelvin in its beta testings. I really loved it as it was very easy to use. Also, you don't have to worry about saving the stuff, even if you quit the code editor, it caches that into your storage automatically.`,
   //   },
   //   {
   //     id: 12,
@@ -114,7 +114,7 @@ const TESTIMONIALS_DATA = [
   // [
   //   {
   //     image: testimonialsImage1,
-  //     text: "I would like to take this oppertunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
+  //     text: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
   //     username: "@hello.mimmie",
   //     name: "Minnie Horn",
   //   },
@@ -156,7 +156,7 @@ const TESTIMONIALS_DATA = [
   // [
   //   {
   //     image: testimonialsImage1,
-  //     text: "I would like to take this oppertunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
+  //     text: "I would like to take this opportunity to thank SA Places for the great service rendered to us and in particular Estelle. You got me the best place ever in just a few moments after I spoke to you.",
   //     username: "@hello.mimmie",
   //     name: "Minnie Horn",
   //   },
@@ -327,7 +327,7 @@ const styles = {
 //       avatar: avatar,
 //       name: "Nitish Kumar",
 //       username: "@nitish.kumar",
-//       text: `Codash is a great tool for me as it helps me to write the code on any device that I have given that it is touch screen. I personally liek the setup process that you don't have to do much stuff while it up. Just go rent a server and start programming.`,
+//       text: `Codash is a great tool for me as it helps me to write the code on any device that I have given that it is touch screen. I personally like the setup process that you don't have to do much stuff while it up. Just go rent a server and start programming.`,
 //     },
 //   ],
 //   [
