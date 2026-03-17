@@ -40,12 +40,12 @@ export default function SEO({
       name: `twitter:description`,
       content: description,
     },
-  ].concat(meta);
+  ].concat(meta || []);
   return (
     <Head>
       <title>{title}</title>
-      {metaData.map(({ name, content }, i) => (
-        <meta key={i} name={name} content={content} />
+      {metaData.filter(Boolean).map((item, i) => (
+        <meta key={i} name={item.name || item.property} content={item.content} />
       ))}
     </Head>
   );

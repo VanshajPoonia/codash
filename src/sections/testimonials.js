@@ -1,11 +1,10 @@
 import React from "react";
 import { Box } from "theme-ui";
-import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 import BlockTitle from "components/block-title";
 import TestimonialsCard from "components/cards/testimonial-card";
-
-SwiperCore.use([Autoplay]);
 
 const avatar = "/assets/images/testimonials/user.png";
 
@@ -129,7 +128,7 @@ const Testimonials = () => {
         title="What clients say about us"
         text="Customer testimonial"
       />
-      <Swiper {...testimonialCarousel}>
+      <Swiper modules={[Autoplay]} {...testimonialCarousel}>
         {TESTIMONIALS_DATA.map((item, index) => (
           <SwiperSlide key={index}>
             {item.map(({ image, text, name, username }, _index) => (
