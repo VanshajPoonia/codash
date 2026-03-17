@@ -1,3 +1,4 @@
+"use client";
 import { useCreateContext } from '../create-context';
 import { reducer, initialState } from './app.reducer';
 
