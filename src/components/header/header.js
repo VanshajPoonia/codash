@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
+import { Box, Container, Flex, Link as ThemeLink } from 'theme-ui';
 import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
@@ -10,7 +9,7 @@ import menuItems from './header.data';
 export default function Header({ className }) {
   return ( 
     <DrawerProvider>
-      <header sx={styles.header} className={className}>
+      <Box as="header" sx={styles.header} className={className}>
         <Container sx={styles.container}>
           <Logo image="/assets/coder.png" />
 
@@ -18,7 +17,7 @@ export default function Header({ className }) {
             {menuItems.map(({ path, label }, i) => (
               <ScrollLink
                 activeClass="active"
-                sx={styles.nav.navLink}
+                style={styles.navLinkStyle}
                 to={path}
                 spy={true}
                 smooth={true}
@@ -31,16 +30,18 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <a href="https://freetrial.codash.hypnosys.in" target="_blank" rel="noopener noreferrer" sx={styles.headerBtn}
-            ml={2}
-            label="Free Trial"
-            variant="buttons.primary"
-            >Free Trial</a>
-          
+          <ThemeLink
+            href="https://freetrial.codash.hypnosys.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={styles.headerBtn}
+          >
+            Free Trial
+          </ThemeLink>
 
           <MobileDrawer />
         </Container>
-      </header>
+      </Box>
     </DrawerProvider>
   );
 }
@@ -57,6 +58,7 @@ const styles = {
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
+    textDecoration: 'none',
     '&:hover': {
       color: '#fff',
     },
@@ -92,20 +94,14 @@ const styles = {
     '@media screen and (max-width: 960px)': {
       display: 'none',
     },
-    navLink: {
-      fontSize: '16px',
-      color: '#02073E',
-      fontWeight: '400',
-      cursor: 'pointer',
-      lineHeight: '1.2',
-      mr: '48px',
-      transition: '500ms',
-      ':last-child': {
-        mr: '0',
-      },
-      '&:hover, &.active': {
-        color: 'primary',
-      },
-    },
+  },
+  navLinkStyle: {
+    fontSize: '16px',
+    color: '#02073E',
+    fontWeight: '400',
+    cursor: 'pointer',
+    lineHeight: '1.2',
+    marginRight: '48px',
+    transition: '500ms',
   },
 };

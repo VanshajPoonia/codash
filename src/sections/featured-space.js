@@ -1,7 +1,6 @@
-/** @jsx jsx */
 import { rgba } from "polished";
 import { useState, useRef, useEffect } from "react";
-import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
+import { Box, Container, Image, Heading, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Progressbar from "components/progressbar";
 import Feature from "components/cards/feature";

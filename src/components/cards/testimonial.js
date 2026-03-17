@@ -1,18 +1,17 @@
-/** @jsx jsx */
-import { jsx, Box, Flex, Heading, Link } from "theme-ui";
+import { Box, Flex, Heading, Link } from "theme-ui";
 import Image from "components/image";
 
 const Testimonial = ({ data }) => {
   return (
     <Box sx={styles.testimonial}>
-      <div sx={styles.quote}>{data.text}</div>
+      <Box sx={styles.quote}>{data.text}</Box>
       <Flex sx={styles.author}>
         <Box as="figure">
           <Image src={data.avatar} alt={data.name} />
         </Box>
         <Box>
           <Heading as="h3">{data.name}</Heading>
-          <Link path="#">{data.username}</Link>
+          <Link href="#">{data.username}</Link>
         </Box>
       </Flex>
     </Box>

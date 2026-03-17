@@ -11,6 +11,12 @@ importers:
       '@emotion/react':
         specifier: ^11.11.3
         version: 11.14.0(@types/react@19.2.14)(react@19.2.4)
+      components:
+        specifier: ^0.1.0
+        version: 0.1.0
+      contexts:
+        specifier: ^0.0.0
+        version: 0.0.0
       firebase:
         specifier: ^10.7.0
         version: 10.14.1
@@ -752,6 +758,12 @@ packages:
 
   color-name@1.1.4:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
+
+  components@0.1.0:
+    resolution: {integrity: sha512-4xKUO3dL9LBs8WiOKy2kvLfnwKZLps9xDT5cFS0GL4UiXrr/dNUYus7Uf1bRPG66cUpEmwFAWVOlE9cxQgG+QA==}
+
+  contexts@0.0.0:
+    resolution: {integrity: sha512-Zoae9wVUlvDZK/SuHimsauRcEGes7e3m56LM+4enj8D0B/Est4wHg37N6/aMrMReWPujyHtwS/9RPPD8TX6NNw==}
 
   convert-source-map@1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
@@ -1910,6 +1922,10 @@ snapshots:
       color-name: 1.1.4
 
   color-name@1.1.4: {}
+
+  components@0.1.0: {}
+
+  contexts@0.0.0: {}
 
   convert-source-map@1.9.0: {}
 
