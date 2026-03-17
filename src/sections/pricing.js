@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { keyframes } from "@emotion/react";
 import { Box, Container, Grid, Button } from "theme-ui";
-import BlockTitle from "components/block-title";
-import PriceCard from "components/cards/price-card";
+import BlockTitle from "../components/block-title";
+import PriceCard from "../components/cards/price-card";
 
 const PRICE_MONTHLY_DATA = [
   {

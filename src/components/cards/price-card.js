@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Image, Text, Heading } from "theme-ui";
-import { Link } from "components/link";
+import { Link } from "../link";
 
 const PriceCard = ({ data: { title, icon, amount, options, recommended } }) => {
   return (

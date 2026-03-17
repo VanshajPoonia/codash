@@ -3,8 +3,8 @@ import { Box } from "theme-ui";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import BlockTitle from "components/block-title";
-import TestimonialsCard from "components/cards/testimonial-card";
+import BlockTitle from "../components/block-title";
+import TestimonialsCard from "../components/cards/testimonial-card";
 
 const avatar = "/assets/images/testimonials/user.png";
 

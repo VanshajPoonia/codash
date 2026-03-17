@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Container, Flex, Text, Heading } from "theme-ui";
-import { Link } from "components/link";
-import BlockTitle from "components/block-title";
-import Accordion from "components/accordion/accordion";
+import { Link } from "../components/link";
+import BlockTitle from "../components/block-title";
+import Accordion from "../components/accordion/accordion";
 
 const accordionData = [
   {

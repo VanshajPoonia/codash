@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Container, Flex, Image, Text, Heading } from "theme-ui";
-import JackpotCard from "components/cards/jackpot-card";
+import JackpotCard from "../components/cards/jackpot-card";
 
 const JACKPOT_DATA = [
   {

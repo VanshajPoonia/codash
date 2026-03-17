@@ -1,5 +1,5 @@
 import { Image } from 'theme-ui';
-import { Link } from 'components/link';
+import { Link } from './link';
 
 export default function Logo({ image }) {
   return (

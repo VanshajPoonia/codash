@@ -1,6 +1,6 @@
 import { Box, Text, Container } from "theme-ui";
-import { Link } from "components/link";
-import Logo from "components/logo";
+import { Link } from "../link";
+import Logo from "../logo";
 
 export default function Footer() {
   return (

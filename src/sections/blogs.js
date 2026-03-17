@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Box, Grid } from 'theme-ui';
 import Masonry from 'react-masonry-component';
-import BlockTitle from 'components/block-title';
-import BlogCard from 'components/cards/blog-card';
+import BlockTitle from '../components/block-title';
+import BlogCard from '../components/cards/blog-card';
 
-import blogImage1 from 'assets/blog-1-1.png';
-import blogImage2 from 'assets/blog-1-2.png';
-import blogImage3 from 'assets/blog-1-3.png';
-import blogImage4 from 'assets/blog-1-4.png';
+const blogImage1 = '/assets/blog-1-1.png';
+const blogImage2 = '/assets/blog-1-2.png';
+const blogImage3 = '/assets/blog-1-3.png';
+const blogImage4 = '/assets/blog-1-4.png';
 
 const BLOG_DATA = [
   {

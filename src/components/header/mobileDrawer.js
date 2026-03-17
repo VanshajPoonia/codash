@@ -1,12 +1,12 @@
 "use client";
 import React, { useContext } from 'react';
 import { Button, Box } from 'theme-ui';
-import Drawer from 'components/drawer';
-import { DrawerContext } from 'contexts/drawer/drawer.context';
+import Drawer from '../drawer';
+import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link as ScrollLink } from 'react-scroll';
 import menuItems from './header.data';
-import Logo from 'components/logo';
+import Logo from '../logo';
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
