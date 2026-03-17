@@ -59,10 +59,7 @@ export const AccordionButton = ({ children, ...rest }) => (
 const variants = {
   open: {
     height: 'auto',
-    marginBottom: 10,
-    '@media(min-width: 768px)': {
-      marginBottom: 30,
-    },
+    marginBottom: 20,
   },
   closed: { height: 0, marginTop: 0, marginBottom: 0 },
 };
