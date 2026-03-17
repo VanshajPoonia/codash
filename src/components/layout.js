@@ -1,6 +1,5 @@
 "use client";
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { Box } from 'theme-ui';
 import { useEffect } from 'react';
 import { useStickyState, useStickyDispatch } from 'contexts/app/app.provider';
 
@@ -14,7 +13,7 @@ export default function Layout({ children }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const threshold = 100; // pixels from top before sticky kicks in
+      const threshold = 100;
 
       if (scrollTop > threshold) {
         dispatch({ type: 'SET_STICKY' });
@@ -29,7 +28,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <div
+      <Box
         sx={{
           position: isSticky ? 'fixed' : 'relative',
           top: 0,
@@ -40,15 +39,16 @@ export default function Layout({ children }) {
         }}
       >
         <Header className={`${isSticky ? 'sticky' : 'unSticky'}`} />
-      </div>
-      {isSticky && <div sx={{ height: '80px' }} />}
-      <main
+      </Box>
+      {isSticky && <Box sx={{ height: '80px' }} />}
+      <Box
+        as="main"
         sx={{
           variant: 'layout.main',
         }}
       >
         {children}
-      </main>
+      </Box>
       <Footer />
     </>
   );

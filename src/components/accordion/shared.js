@@ -1,10 +1,9 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { motion } from 'framer-motion';
+import { Box } from 'theme-ui';
 
 export const AccordionButton = ({ children, ...rest }) => (
-  <div
-    css={{
+  <Box
+    sx={{
       display: 'flex',
       alignItems: 'center',
       letterSpacing: '-0.2px',
@@ -26,7 +25,6 @@ export const AccordionButton = ({ children, ...rest }) => (
         paddingBottom: '20px',
         fontSize: '15px',
       },
-
       ':focus': {
         outline: 'none',
         backgroundColor: 'rgba(255, 255, 255, 0.4)',
@@ -55,12 +53,11 @@ export const AccordionButton = ({ children, ...rest }) => (
     {...rest}
   >
     {children}
-  </div>
+  </Box>
 );
 
 const variants = {
   open: {
-    // maxHeight: 200,
     height: 'auto',
     marginBottom: 10,
     '@media(min-width: 768px)': {
@@ -69,22 +66,20 @@ const variants = {
   },
   closed: { height: 0, marginTop: 0, marginBottom: 0 },
 };
+
 export function AccordionContents({ isOpen, ...props }) {
   return (
     <motion.div
       initial="closed"
       animate={isOpen ? 'open' : 'closed'}
       variants={variants}
-      css={{
+      style={{
         overflowY: 'hidden',
         fontSize: 15,
         padding: '0 15px',
         paddingRight: '40px',
         lineHeight: '30px',
         color: '#343D48',
-        '@media(min-width: 768px)': {
-          padding: '0 30px',
-        },
       }}
       {...props}
     />
@@ -92,8 +87,8 @@ export function AccordionContents({ isOpen, ...props }) {
 }
 
 export const AccordionItem = ({ isOpen, children, ...rest }) => (
-  <div
-    css={{
+  <Box
+    sx={{
       borderRadius: 5,
       marginBottom: 10,
       border: '1px solid #EDEFF2',
@@ -103,7 +98,7 @@ export const AccordionItem = ({ isOpen, children, ...rest }) => (
     {...rest}
   >
     {children}
-  </div>
+  </Box>
 );
 
 export const preventClose = (state, changes) =>

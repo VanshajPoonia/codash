@@ -1,5 +1,4 @@
-/** @jsx jsx */
-import { jsx, Box } from "theme-ui";
+import { Box } from "theme-ui";
 import Image from "components/image";
 
 const Progressbar = ({ currentWidth, togglePlay, handleClick, ...props }) => {
@@ -8,25 +7,28 @@ const Progressbar = ({ currentWidth, togglePlay, handleClick, ...props }) => {
 
   return (
     <Box sx={styles.progressbar} {...props}>
-      <svg viewBox="0 0 80 80" sx={styles.svg}>
+      <Box
+        as="svg"
+        viewBox="0 0 80 80"
+        sx={styles.svg}
+      >
         <circle
           fill="transparent"
-          sx={styles.circle}
+          style={styles.circleStyle}
           stroke="rgba(255,255,255,0.2)"
-        ></circle>
+        />
         <circle
           stroke="#fff"
-          sx={styles.circle}
-          strokeDashoffset={pct}
-        ></circle>
-      </svg>
-      <button sx={styles.button} onClick={handleClick}>
+          style={{ ...styles.circleStyle, strokeDashoffset: pct }}
+        />
+      </Box>
+      <Box as="button" sx={styles.button} onClick={handleClick}>
         <Image
           style={{ marginLeft: togglePlay ? "3px" : 0 }}
           src={togglePlay ? "/assets/images/icons/play.png" : "/assets/images/icons/pause.png"}
           alt="play pause icon"
         />
-      </button>
+      </Box>
     </Box>
   );
 };
@@ -45,7 +47,7 @@ const styles = {
     maxWidth: "50px",
     transform: "rotate(-90deg)",
   },
-  circle: {
+  circleStyle: {
     r: "35",
     cx: "40",
     cy: "40",
