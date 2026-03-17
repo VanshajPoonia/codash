@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "components/*": ["components/*"],
-      "contexts/*": ["contexts/*"],
-      "theme": ["theme/index.js"],
-      "theme/*": ["theme/*"],
-      "sections/*": ["sections/*"],
-      "assets/*": ["assets/*"]
+      "components/*": ["src/components/*"],
+      "contexts/*": ["src/contexts/*"],
+      "theme": ["src/theme/index.js"],
+      "theme/*": ["src/theme/*"],
+      "sections/*": ["src/sections/*"],
+      "assets/*": ["src/assets/*"]
     }
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "next.config.js"],
   "exclude": ["node_modules"]
 }
