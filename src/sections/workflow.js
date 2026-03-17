@@ -2,9 +2,6 @@ import { Heading, Box, Text, Container, Grid } from "theme-ui";
 import BlockTitle from "components/block-title";
 import React from "react";
 
-import ArrowOdd from "assets/arrow-odd.png";
-import ArrowEven from "assets/arrow-even.png";
-
 const workflowData = [
   {
     title: "Select a plan",
@@ -31,7 +28,7 @@ const WorkFlow = () => {
         <BlockTitle
           sx={styles.workflow.blockTitle}
           tagline="Whats the function"
-          heading="Let’s see how it works"
+          heading="Let's see how it works"
         />
 
         <Grid gap="50px 54px" columns={4} sx={styles.workflow.grid}>
@@ -109,10 +106,10 @@ const styles = {
         },
       },
       "&:nth-of-type(2n-1)::before": {
-        backgroundImage: `url(${ArrowOdd})`,
+        backgroundImage: `url(/assets/arrow-odd.png)`,
       },
       "&:nth-of-type(2n)::before": {
-        backgroundImage: `url(${ArrowEven})`,
+        backgroundImage: `url(/assets/arrow-even.png)`,
         top: 17,
       },
       "&:last-child::before": {

@@ -1,54 +1,26 @@
 import React, { useState } from "react";
 import { Box, Container, Button } from "theme-ui";
-import { keyframes } from "@emotion/core";
+import { keyframes } from "@emotion/react";
 import BlockTitle from "components/block-title";
 import Image from "components/image";
 import {
-  AiFillDollarCircle,
-  AiFillPieChart,
   AiFillCode,
   AiOutlineAlignLeft,
   AiFillLock,
 } from "react-icons/ai";
-import { VscExtensions, VscVmActive } from "react-icons/vsc";
-import { FaBriefcase, FaCog } from "react-icons/fa";
-import tabImage1 from "assets/tab-image-1.png";
-import tabImage2 from "assets/tab-image-2.png";
-import tabImage3 from "assets/tab-image-3.png";
-import tabImage4 from "assets/tab-image-4.png";
-import dotPattern from "assets/dot-pattern.svg";
+import { VscVmActive } from "react-icons/vsc";
 
 const Featured = () => {
   const [tab, setTab] = useState({
     active: "budget",
   });
 
-  const handleTab = (tab) => {
-    if (tab === "budget") {
-      setTab({
-        ...tab,
-        active: "budget",
-      });
-    }
-    if (tab === "adjust") {
-      setTab({
-        ...tab,
-        active: "adjust",
-      });
-    }
-    if (tab === "report") {
-      setTab({
-        ...tab,
-        active: "report",
-      });
-    }
-    if (tab === "create") {
-      setTab({
-        ...tab,
-        active: "create",
-      });
-    }
+  const handleTab = (tabName) => {
+    setTab({
+      active: tabName,
+    });
   };
+
   return (
     <Box as="section" sx={styles.featured}>
       <Container sx={styles.container}>
@@ -91,7 +63,7 @@ const Featured = () => {
         <Box sx={styles.tabContent}>
           {tab.active === "budget" && (
             <Image
-              src={tabImage1}
+              src="/assets/tab-image-1.png"
               width="1326"
               height="716"
               alt="tab image"
@@ -101,7 +73,7 @@ const Featured = () => {
           )}
           {tab.active === "adjust" && (
             <Image
-              src={tabImage2}
+              src="/assets/tab-image-2.png"
               width="1326"
               height="716"
               alt="tab image"
@@ -111,7 +83,7 @@ const Featured = () => {
           )}
           {tab.active === "create" && (
             <Image
-              src={tabImage3}
+              src="/assets/tab-image-3.png"
               width="1326"
               height="716"
               alt="tab image"
@@ -121,7 +93,7 @@ const Featured = () => {
           )}
           {tab.active === "report" && (
             <Image
-              src={tabImage4}
+              src="/assets/tab-image-4.png"
               width="1326"
               height="716"
               alt="tab image"
@@ -136,6 +108,7 @@ const Featured = () => {
 };
 
 export default Featured;
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -219,7 +192,7 @@ const styles = {
       content: "''",
       width: "302px",
       height: "347px",
-      backgroundImage: `url(${dotPattern})`,
+      backgroundImage: `url(/assets/dot-pattern.svg)`,
       position: "absolute",
       bottom: "-30px",
       right: "-40px",

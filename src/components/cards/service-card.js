@@ -1,7 +1,5 @@
 import React from "react";
 import { Box, Text, Heading, Image } from "theme-ui";
-import { Link } from "components/link";
-import arrowAngle from "assets/arrow-angle.svg";
 
 const ServiceCard = ({ image, text, heading, path }) => {
   return (
@@ -12,9 +10,6 @@ const ServiceCard = ({ image, text, heading, path }) => {
       <Box sx={styles.content}>
         <Heading as="h3">{heading}</Heading>
         <Text as="p">{text}</Text>
-        {/* <Link sx={styles.link} path={path}>
-          Learn More <Image src={arrowAngle} alt="angle icon" />
-        </Link> */}
       </Box>
     </Box>
   );

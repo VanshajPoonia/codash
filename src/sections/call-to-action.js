@@ -1,8 +1,5 @@
 import React from "react";
 import { Box, Container, Flex, Text, Heading, Image } from "theme-ui";
-import { Link } from "components/link";
-
-import callImage from "assets/call-image.png";
 
 const CallToAction = () => {
   return (
@@ -20,13 +17,14 @@ const CallToAction = () => {
             <a
               href="https://sites.google.com/view/codashtechstack/home"
               target="_blank"
+              rel="noopener noreferrer"
               sx={styles.button}
             >
               Explore More
             </a>
           </Box>
           <Box sx={styles.images}>
-            <Image src={callImage} width="794" height="544" alt="call image" />
+            <Image src="/assets/call-image.png" width="794" height="544" alt="call image" />
           </Box>
         </Flex>
       </Container>

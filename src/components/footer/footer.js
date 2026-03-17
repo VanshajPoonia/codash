@@ -1,9 +1,8 @@
 /** @jsx jsx */
-import React from "react";
 import { jsx, Box, Text, Container } from "theme-ui";
 import { Link } from "components/link";
 import Logo from "components/logo";
-import logoLight from "assets/coder.png";
+
 export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
@@ -15,7 +14,7 @@ export default function Footer() {
             flexDirection: ["column", null, null, null, null, "row"],
           }}
         >
-          <Logo image={logoLight} />
+          <Logo image="/assets/coder.png" />
           <Text
             as="p"
             sx={{
@@ -29,16 +28,16 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.linksWrap} id="footer">
-          <a href="https://freetrial.codash.hypnosys.in" target="_blank">
+          <a href="https://freetrial.codash.hypnosys.in" target="_blank" rel="noopener noreferrer">
             Free Trial
           </a>
-          <a href="https://privacypolicy.codash.hypnosys.in" target="_blank">
+          <a href="https://privacypolicy.codash.hypnosys.in" target="_blank" rel="noopener noreferrer">
             Privacy Policy
           </a>
-          <a href="https://support.codash.hypnosys.in" target="_blank">
+          <a href="https://support.codash.hypnosys.in" target="_blank" rel="noopener noreferrer">
             Support
           </a>
-          <a href="https://contact.codash.hypnosys.in" target="_blank">
+          <a href="https://contact.codash.hypnosys.in" target="_blank" rel="noopener noreferrer">
             Contact Us
           </a>
           <Link path="#faqs">FAQs</Link>

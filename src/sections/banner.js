@@ -1,15 +1,6 @@
 import React from "react";
 import { Box, Container, Image, Heading } from "theme-ui";
-import { keyframes } from "@emotion/core";
-import logoImage from "assets/coder100x100.jpg";
-import bannerImage from "assets/banner-mockup.jpg";
-import bannerIcon1 from "assets/banner-icon-1-1.svg";
-import bannerIcon2 from "assets/banner-icon-1-2.svg";
-import bannerIcon3 from "assets/banner-icon-1-3.svg";
-import bannerIcon4 from "assets/banner-icon-1-4.svg";
-import bannerIcon5 from "assets/banner-icon-1-5.svg";
-import bannerIcon6 from "assets/banner-icon-1-6.svg";
-import bannerIcon7 from "assets/dot-pattern.svg";
+import { keyframes } from "@emotion/react";
 
 const Banner = () => {
   return (
@@ -21,7 +12,7 @@ const Banner = () => {
           alt="banner icon"
           width="43"
           height="48"
-          src={bannerIcon1}
+          src="/assets/banner-icon-1-1.svg"
         />
         <Image
           sx={styles.bannerIcon2}
@@ -29,7 +20,7 @@ const Banner = () => {
           width="53"
           height="45"
           alt="banner icon"
-          src={bannerIcon2}
+          src="/assets/banner-icon-1-2.svg"
         />
         <Image
           sx={styles.bannerIcon3}
@@ -37,7 +28,7 @@ const Banner = () => {
           width="339"
           height="456"
           alt="banner icon"
-          src={bannerIcon3}
+          src="/assets/banner-icon-1-3.svg"
         />
         <Image
           sx={styles.bannerIcon4}
@@ -45,7 +36,7 @@ const Banner = () => {
           alt="banner icon"
           width="338"
           height="316"
-          src={bannerIcon4}
+          src="/assets/banner-icon-1-4.svg"
         />
         <Image
           sx={styles.bannerIcon5}
@@ -53,7 +44,7 @@ const Banner = () => {
           width="194"
           height="123"
           alt="banner icon"
-          src={bannerIcon5}
+          src="/assets/banner-icon-1-5.svg"
         />
         <Image
           sx={styles.bannerIcon6}
@@ -61,7 +52,7 @@ const Banner = () => {
           alt="banner icon"
           width="170"
           height="170"
-          src={bannerIcon6}
+          src="/assets/banner-icon-1-6.svg"
         />
         <Image
           sx={styles.bannerIcon7}
@@ -69,11 +60,11 @@ const Banner = () => {
           alt="banner icon"
           width="302"
           height="347"
-          src={bannerIcon7}
+          src="/assets/dot-pattern.svg"
         />
         <Image
           sx={styles.logo}
-          src={logoImage}
+          src="/assets/coder100x100.jpg"
           width="100"
           height="100"
           alt="logo image"
@@ -85,7 +76,7 @@ const Banner = () => {
         <br />
         <br />
         <Image
-          src={bannerImage}
+          src="/assets/banner-mockup.jpg"
           width="1000"
           height="522"
           sx={styles.bannerImage}

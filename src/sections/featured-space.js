@@ -5,18 +5,9 @@ import { jsx, Box, Container, Image, Heading, Text } from "theme-ui";
 import SectionHeading from "components/section-heading";
 import Progressbar from "components/progressbar";
 import Feature from "components/cards/feature";
-// import Image from "components/image";
-import expand from "assets/images/icons/expand.png";
-import users from "assets/images/icons/users.png";
-import wifi from "assets/images/icons/wifi.png";
-import slider1 from "assets/images/features/privacy.png";
-import slider2 from "assets/images/features/deployment.png";
-import slider3 from "assets/images/features/speed.png";
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/swiper-bundle.min.css";
 
 SwiperCore.use([Autoplay, Pagination, EffectFade]);
 
@@ -24,20 +15,20 @@ const data = {
   feature: [
     {
       id: 1,
-      icon: expand,
+      icon: "/assets/images/icons/expand.png",
       title: "Privacy",
       description: "Its for you and only you.",
     },
     {
       id: 2,
-      icon: users,
+      icon: "/assets/images/icons/users.png",
       title: "Deploy and Share",
       description:
         "You can use it to share your project by just giving your URL along with the port number.",
     },
     {
       id: 3,
-      icon: wifi,
+      icon: "/assets/images/icons/wifi.png",
       title: "Hyper fast internet",
       description: "Internet speed is much better than you expect it to be :D",
     },
@@ -45,19 +36,19 @@ const data = {
   gallery: [
     {
       id: 1,
-      image: slider1,
+      image: "/assets/images/features/privacy.png",
       title: "Privacy",
       desc: "Only to you and only you.",
     },
     {
       id: 2,
-      image: slider2,
+      image: "/assets/images/features/deployment.png",
       title: "Sharing is Caring",
       desc: "Just share your URL after running your app",
     },
     {
       id: 3,
-      image: slider3,
+      image: "/assets/images/features/speed.png",
       title: "Speed-That's what matters",
       desc: "Ultra Fast internet speed so that you never face any issue",
     },

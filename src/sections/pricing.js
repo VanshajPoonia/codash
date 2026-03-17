@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import { keyframes } from "@emotion/core";
-import { Box, Container, Grid, Button, Text } from "theme-ui";
+import { keyframes } from "@emotion/react";
+import { Box, Container, Grid, Button } from "theme-ui";
 import BlockTitle from "components/block-title";
 import PriceCard from "components/cards/price-card";
-import priceIcon1 from "assets/price-user-1-1.svg";
-import priceIcon2 from "assets/price-user-1-2.svg";
 
 const PRICE_MONTHLY_DATA = [
   {
     recommended: null,
     title: "Spark",
-    icon: priceIcon1,
-    amount: "$1/₹65",
+    icon: "/assets/price-user-1-1.svg",
+    amount: "$1/Rs.65",
 
     options: [
       {
@@ -59,8 +57,8 @@ const PRICE_MONTHLY_DATA = [
   {
     recommended: "Recommended",
     title: "Flame",
-    icon: priceIcon1,
-    amount: "$2/₹129",
+    icon: "/assets/price-user-1-1.svg",
+    amount: "$2/Rs.129",
 
     options: [
       {
@@ -81,7 +79,7 @@ const PRICE_MONTHLY_DATA = [
       },
       {
         status: true,
-        label: "Accessible for 100 hours/month ($1/₹75 per 10 hours)",
+        label: "Accessible for 100 hours/month ($1/Rs.75 per 10 hours)",
       },
       {
         status: true,
@@ -100,8 +98,8 @@ const PRICE_MONTHLY_DATA = [
   {
     recommended: null,
     title: "Blaze",
-    icon: priceIcon2,
-    amount: "$5/₹379",
+    icon: "/assets/price-user-1-2.svg",
+    amount: "$5/Rs.379",
     options: [
       {
         status: true,
@@ -140,7 +138,7 @@ const PRICE_MONTHLY_DATA = [
   {
     recommended: null,
     title: "Inferno",
-    icon: priceIcon2,
+    icon: "/assets/price-user-1-2.svg",
     amount: "Contact Sales",
     options: [
       {
@@ -167,8 +165,8 @@ const PRICE_YEARLY_DATA = [
   {
     recommended: null,
     title: "Spark",
-    icon: priceIcon1,
-    amount: "$10/₹759",
+    icon: "/assets/price-user-1-1.svg",
+    amount: "$10/Rs.759",
 
     options: [
       {
@@ -216,8 +214,8 @@ const PRICE_YEARLY_DATA = [
   {
     recommended: "Recommended",
     title: "Flame",
-    icon: priceIcon1,
-    amount: "$19/₹1299",
+    icon: "/assets/price-user-1-1.svg",
+    amount: "$19/Rs.1299",
     options: [
       {
         status: true,
@@ -237,7 +235,7 @@ const PRICE_YEARLY_DATA = [
       },
       {
         status: true,
-        label: "Accessible for 100 hours/month ($1/₹75 per 10 hours)",
+        label: "Accessible for 100 hours/month ($1/Rs.75 per 10 hours)",
       },
       {
         status: true,
@@ -256,8 +254,8 @@ const PRICE_YEARLY_DATA = [
   {
     recommended: null,
     title: "Blaze",
-    icon: priceIcon2,
-    amount: "$59/₹4399",
+    icon: "/assets/price-user-1-2.svg",
+    amount: "$59/Rs.4399",
     options: [
       {
         status: true,
@@ -296,7 +294,7 @@ const PRICE_YEARLY_DATA = [
   {
     recommended: null,
     title: "Inferno",
-    icon: priceIcon2,
+    icon: "/assets/price-user-1-2.svg",
     amount: "Contact Sales",
     options: [
       {
@@ -325,17 +323,15 @@ const Pricing = () => {
     pricingPlan: PRICE_MONTHLY_DATA,
   });
 
-  const handlePlan = (plan) => {
-    if (plan === "monthly") {
+  const handlePlan = (planType) => {
+    if (planType === "monthly") {
       setPlan({
-        ...plan,
         active: "monthly",
         pricingPlan: PRICE_MONTHLY_DATA,
       });
     }
-    if (plan === "yearly") {
+    if (planType === "yearly") {
       setPlan({
-        ...plan,
         active: "yearly",
         pricingPlan: PRICE_YEARLY_DATA,
       });

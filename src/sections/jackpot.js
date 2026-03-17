@@ -1,18 +1,15 @@
 import React from "react";
 import { Box, Container, Flex, Image, Text, Heading } from "theme-ui";
 import JackpotCard from "components/cards/jackpot-card";
-import jackpotImage from "assets/jackpot.png";
-import jackpotImage1 from "assets/jackpot-1-1.png";
-import jackpotImage2 from "assets/jackpot-1-2.png";
 
 const JACKPOT_DATA = [
   {
-    image: jackpotImage1,
+    image: "/assets/jackpot-1-1.png",
     text: "We give you unlimited access to the IDE for complete 2 days. You may create and download your code files anytime.",
     heading: "Free Trial",
   },
   {
-    image: jackpotImage2,
+    image: "/assets/jackpot-1-2.png",
     text: "We have also tried to integrate some of the VS Code extensions in the IDE by the source code available in their repos.",
     heading: "VS Code Extensions",
   },
@@ -25,7 +22,7 @@ const Jackpot = () => {
         <Flex sx={styles.flex}>
           <Box sx={styles.image}>
             <Image
-              src={jackpotImage}
+              src="/assets/jackpot.png"
               width="926"
               height="664"
               alt="jackpot image"
