@@ -5,10 +5,11 @@ import SectionHeading from "components/section-heading";
 import Progressbar from "components/progressbar";
 import Feature from "components/cards/feature";
 
-import SwiperCore, { Autoplay, Pagination, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-SwiperCore.use([Autoplay, Pagination, EffectFade]);
+import { Autoplay, Pagination, EffectFade } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/pagination";
 
 const data = {
   feature: [
@@ -119,6 +120,7 @@ const FeaturedSpace = () => {
               currentWidth={currentWidth}
             />
             <Swiper
+              modules={[Autoplay, Pagination, EffectFade]}
               loop={true}
               effect="fade"
               ref={swiperRef}
