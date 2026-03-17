@@ -1,13 +1,12 @@
+"use client";
 import React, { useContext } from 'react';
 import { Button, Box } from 'theme-ui';
-import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from 'contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link as ScrollLink } from 'react-scroll';
 import menuItems from './header.data';
 import Logo from 'components/logo';
-import logoDark from 'assets/coder.png';
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);
@@ -33,32 +32,30 @@ const MobileDrawer = () => {
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
-      <Scrollbars autoHide>
-        <Box sx={styles.content}>
-          <Logo image={logoDark} />
-          <Box sx={styles.menu}>
-            {menuItems.map(({ path, label }, i) => (
-              <ScrollLink
-                activeClass="active"
-                to={path}
-                spy={true}
-                smooth={true}
-                offset={10}
-                duration={500}
-                key={i}
-              >
-                {label}
-              </ScrollLink>
-            ))}
-          </Box>
-
-          <Box sx={styles.menuFooter}>
-            <Button variant="primary" sx={styles.button}>
-              <a href="https://freetrial.codash.hypnosys.in" target="_blank">Free Trial</a>
-            </Button>
-          </Box>
+      <Box sx={styles.content}>
+        <Logo image="/assets/coder.png" />
+        <Box sx={styles.menu}>
+          {menuItems.map(({ path, label }, i) => (
+            <ScrollLink
+              activeClass="active"
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+              key={i}
+            >
+              {label}
+            </ScrollLink>
+          ))}
         </Box>
-      </Scrollbars>
+
+        <Box sx={styles.menuFooter}>
+          <Button variant="primary" sx={styles.button}>
+            <a href="https://freetrial.codash.hypnosys.in" target="_blank" rel="noopener noreferrer">Free Trial</a>
+          </Button>
+        </Box>
+      </Box>
     </Drawer>
   );
 };

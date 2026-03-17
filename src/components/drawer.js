@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Box } from 'theme-ui';
 import RcDrawer from 'rc-drawer';
 
@@ -17,16 +17,14 @@ const Drawer = ({
   ...props
 }) => {
   return (
-    <Fragment>
+    <>
       <RcDrawer
         open={open}
         onClose={toggleHandler}
         className={`drawer ${className ? className : ''}`.trim()}
         width={width}
         placement={placement}
-        handler={false}
-        level={null}
-        duration="0.4s"
+        autoFocus={false}
         {...props}
       >
         {closeButton && (
@@ -43,7 +41,7 @@ const Drawer = ({
       >
         {drawerHandler}
       </Box>
-    </Fragment>
+    </>
   );
 };
 

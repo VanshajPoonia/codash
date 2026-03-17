@@ -1,3 +1,4 @@
+"use client";
 import React, { useReducer } from 'react';
 import { DrawerContext } from './drawer.context';
 const initialState = {

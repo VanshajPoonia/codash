@@ -2,10 +2,6 @@ import React from "react";
 import { Box, Image, Text, Heading } from "theme-ui";
 import { Link } from "components/link";
 
-import priceCheck from "assets/price-check.svg";
-import priceCross from "assets/price-cross.svg";
-import priceArrow from "assets/price-arrow.svg";
-
 const PriceCard = ({ data: { title, icon, amount, options, recommended } }) => {
   return (
     <Box
@@ -31,9 +27,9 @@ const PriceCard = ({ data: { title, icon, amount, options, recommended } }) => {
             key={index}
           >
             {option.status === true ? (
-              <Image src={priceCheck} width="20" height="20" alt="" />
+              <Image src="/assets/price-check.svg" width="20" height="20" alt="" />
             ) : (
-              <Image src={priceCross} width="20" height="20" alt="" />
+              <Image src="/assets/price-cross.svg" width="20" height="20" alt="" />
             )}
             {option.label}
           </Box>
@@ -49,9 +45,10 @@ const PriceCard = ({ data: { title, icon, amount, options, recommended } }) => {
         <a
           href="https://payment.codash.hypnosys.in"
           target="_blank"
+          rel="noopener noreferrer"
           className="priceButton"
         >
-          <Image src={priceArrow} width="48" height="45" alt="price button" />
+          <Image src="/assets/price-arrow.svg" width="48" height="45" alt="price button" />
         </a>
       </Box>
     </Box>

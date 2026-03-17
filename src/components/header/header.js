@@ -6,14 +6,13 @@ import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
-import logoDark from 'assets/coder.png';
 
 export default function Header({ className }) {
   return ( 
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo image={logoDark} />
+          <Logo image="/assets/coder.png" />
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -32,7 +31,7 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <a href="https://freetrial.codash.hypnosys.in" target="_blank" sx={styles.headerBtn}
+          <a href="https://freetrial.codash.hypnosys.in" target="_blank" rel="noopener noreferrer" sx={styles.headerBtn}
             ml={2}
             label="Free Trial"
             variant="buttons.primary"
