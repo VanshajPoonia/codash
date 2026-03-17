@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "cp -r src/assets public/ 2>/dev/null || true && next dev --turbopack",
+    "dev": "cp -r src/assets public/ 2>/dev/null || true && next dev",
     "build": "cp -r src/assets public/ && next build",
     "start": "next start",
     "postinstall": "mkdir -p public && cp -r src/assets public/ 2>/dev/null || true"
