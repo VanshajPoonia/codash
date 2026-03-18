@@ -76,7 +76,7 @@ const Banner = () => {
         <br />
         <br />
         <Image
-          src="/assets/banner-logo.png"
+          src="/assets/banner-mockup.jpg"
           width="1000"
           height="522"
           sx={styles.bannerImage}
