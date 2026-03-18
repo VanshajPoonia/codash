@@ -64,7 +64,7 @@ const Banner = () => {
         />
         <Image
           sx={styles.logo}
-          src="/assets/coder100x100.jpg"
+          src="/assets/coder.png"
           width="100"
           height="100"
           alt="logo image"
@@ -76,11 +76,11 @@ const Banner = () => {
         <br />
         <br />
         <Image
-          src="/assets/banner-mockup.jpg"
+          src="/assets/banner-logo.png"
           width="1000"
           height="522"
           sx={styles.bannerImage}
-          alt="banner moc"
+          alt="banner mockup"
         />
       </Container>
     </Box>
