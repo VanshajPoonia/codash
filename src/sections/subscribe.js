@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Input, Box, Container, Heading, Text } from "theme-ui";
-import { Link } from "components/link";
+import { Link } from "../components/link";
 
 const Subscribe = () => {
   return (

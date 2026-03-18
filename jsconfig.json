@@ -1,5 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  }
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"],
+      "contexts/*": ["src/contexts/*"],
+      "theme": ["src/theme/index.js"],
+      "theme/*": ["src/theme/*"],
+      "sections/*": ["src/sections/*"],
+      "assets/*": ["src/assets/*"]
+    }
+  },
+  "include": ["src/**/*", "next.config.js"],
+  "exclude": ["node_modules"]
 }

@@ -1,5 +1,5 @@
 import { Heading, Box, Text, Container, Grid } from "theme-ui";
-import BlockTitle from "components/block-title";
+import BlockTitle from "../components/block-title";
 import React from "react";
 
 const workflowData = [

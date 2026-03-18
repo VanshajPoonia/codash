@@ -1,7 +1,7 @@
 "use client";
 import { Box } from 'theme-ui';
 import { useEffect } from 'react';
-import { useStickyState, useStickyDispatch } from 'contexts/app/app.provider';
+import { useStickyState, useStickyDispatch } from '../contexts/app/app.provider';
 
 import Header from './header/header';
 import Footer from './footer/footer';

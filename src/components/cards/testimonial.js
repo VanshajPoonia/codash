@@ -1,5 +1,5 @@
 import { Box, Flex, Heading, Link } from "theme-ui";
-import Image from "components/image";
+import Image from "../image";
 
 const Testimonial = ({ data }) => {
   return (

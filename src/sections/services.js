@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Container, Grid } from "theme-ui";
-import BlockTitle from "components/block-title";
-import ServiceCard from "components/cards/service-card";
+import BlockTitle from "../components/block-title";
+import ServiceCard from "../components/cards/service-card";
 
 const SERVICES_DATA = [
   {

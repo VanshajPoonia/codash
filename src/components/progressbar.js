@@ -1,5 +1,5 @@
 import { Box } from "theme-ui";
-import Image from "components/image";
+import Image from "./image";
 
 const Progressbar = ({ currentWidth, togglePlay, handleClick, ...props }) => {
   let c = Math.PI * (35 * 2); // 35 is circle r's value

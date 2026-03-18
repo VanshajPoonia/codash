@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Box, Container, Button } from "theme-ui";
 import { keyframes } from "@emotion/react";
-import BlockTitle from "components/block-title";
-import Image from "components/image";
+import BlockTitle from "../components/block-title";
+import Image from "../components/image";
 import {
   AiFillCode,
   AiOutlineAlignLeft,

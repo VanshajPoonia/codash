@@ -1,5 +1,5 @@
 import { rgba } from "polished";
-import Image from "components/image";
+import Image from "../image";
 import { Box, Heading, Text } from "theme-ui";
 
 const Feature = ({ data: feature }) => {
